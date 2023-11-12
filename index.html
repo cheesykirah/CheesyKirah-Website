@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CheesyKirah</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+<nav>
+    <div>
+    <img src="assets/icons/cheese icon.png" alt="Käse Icon" class="navicon">
+    <img src="assets/font/CheesyKirah.png" alt="CheesyKirah" class="navfont">
+    </div>
+    <ul>
+        <li><a href="index.html">PORTFOLIO</a></li>
+        <li><a href="personal.html">PERSONAL</a></li>
+        <li><a href="#stuff">STUFF</a></li>
+    </ul>
+</nav>
+</header>
+
+
+
+<div class="sections">
+
+
+    <div class="section left" id="greeting">
+        <div class="sectionImgDiv"><img src="assets/images/cheesykirah.png" alt=""></div>
+        <div class="sectionTextDiv">
+            <h1 id="greeting">Greetings,</h1>
+            <p id="hieralter">My name is CheesyKirah. I am 16,7889012 years old and reside in central europe.</p>
+            <ul>
+                <li><a href="#machinima"><img src="assets/icons/arrow.png">Machinima</a></li>
+                <li><a href="#games"><img src="assets/icons/arrow.png">Games</a></li>
+                <li><a href="#videos"><img src="assets/icons/arrow.png">Videos</a></li>
+                <li><a href="#music"><img src="assets/icons/arrow.png">Music</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</div>
+</body>
+
+<script>
+function calculateAge() {
+    // Set the birthdate
+    const birthdate = new Date('2007-04-21T10:49:00Z'); // UTC time equivalent of 12:49 Mitteleuropäische Normalzeit
+    // Get the current date
+    const now = new Date();
+    // Calculate the difference in milliseconds
+    const diff = now - birthdate;
+    // Convert milliseconds to years (10 decimal places)
+    const ageInYears = (diff / (1000 * 60 * 60 * 24 * 365.25)).toFixed(10);
+
+    // Insert the age into the paragraph with the id 'hieralter'
+    document.getElementById('hieralter').textContent = `My name is CheesyKirah. I am ${ageInYears} years old and reside in central europe.`;
+    }
+
+// Call calculateAge every millisecond
+setInterval(calculateAge, 1);
+
+</script>
+
+</html>

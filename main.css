@@ -1,0 +1,240 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-color: #001D2C;
+  background: url('assets/images/background.png') no-repeat center center fixed; 
+  background-size: cover;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  opacity: 0.9;
+  background-color: #001D2C;
+  z-index: -1; 
+}
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+  }
+  header ul {
+    list-style: none;
+    padding: 0;
+  }
+  header ul li {
+    display: inline;
+    margin: 0 25px;
+  }
+  header a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .greeting {
+    text-align: center;
+  }
+  .sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .section {
+    width: 30%;
+    background: #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .section h2 {
+    color: #82cffa; /* Light blue */
+  }
+  .section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  nav div .navicon {
+    height: 50px;
+  }
+  nav div .navfont {
+    height: 35px;
+  }
+
+
+  nav {
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+  }
+  nav div {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  nav ul {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+
+  nav {
+    background-color: rgba(97,123,135,0.5);
+
+    outline-color: #83A2B0;
+    outline-width: 5px !important;
+    outline-style: solid;
+
+    border-radius: 25px;
+
+    width: 95%;
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+
+
+
+nav ul li a {
+    font-weight: 800;
+    font-size: 20px;
+    transition: all 0.1s;
+
+    background-color: rgba(255, 255, 255, 0);
+    height: auto;
+
+    margin: auto;
+}
+
+nav ul li a:hover {
+    font-weight: 900;
+    font-size: 20px;
+    transition: all 0.1s;
+    color: rgb(212, 234, 240);
+
+    background-color: rgba(255, 255, 255, 0.2);
+    height: auto;
+    margin: auto;
+}
+
+
+
+/*  Card Styling */
+.sections {
+  display: flex;
+  justify-content: center; /* Changed to center to avoid huge gaps */
+  flex-wrap: wrap; /* Allows sections to wrap if needed */
+  gap: 20px; /* Adds space between sections if they wrap */
+  padding: 20px; /* Adds padding inside the sections container */
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  flex: 1; /* Allows sections to grow and fill the available space */
+  max-width: 50%; /* Maximum width of each section */
+
+  background: rgba(17,52,65, 0.75);
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: rgba(50,85,99, 0.75);
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+
+
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px; /* Adds a margin at the bottom of each section */
+
+  max-height: 300px;
+}
+
+.section img {
+  width: 100%; /* Ensures image takes the full width of its container */
+  height: auto;
+  border-radius: 15px;
+}
+
+.sectionImgDiv {
+  margin-right: 2.5%;
+  width: 40%;
+}
+
+.sectionTextDiv {
+  width: 100%;
+}
+
+/* Text-Styling */
+.section h1 {
+  font-size: 2em; /* Große Überschrift */
+}
+
+.section p {
+  font-size: 1em; /* Absatz Textgröße */
+}
+
+.section ul {
+  list-style: none; /* Entfernt die Listensymbole */
+  padding: 0; /* Entfernt den Innenabstand */
+}
+
+.section li {
+  padding: 5px 0; /* Fügt vertikalen Abstand zwischen den Listenelementen hinzu */
+}
+
+.section a {
+  color: #82cffa; /* Blaue Linkfarbe */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+/*Border Colors*/
+.section .sectionImgDiv img {
+  outline-style: solid;
+  outline-width: 5px;
+}
+/* Card Specifics */
+
+/*Border Colors*/
+#greeting .sectionImgDiv img {
+  outline-color: #7B5E16;
+}
+
+
+
+
+
+
+.section .sectionTextDiv ul li a img {
+  width: 20px;
+  margin-right: 5px;
+}
+.section .sectionTextDiv ul li a {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+
+  transform: translateY(0) !important;
+  transition: all 0.1s;
+}
+.section .sectionTextDiv ul li a:hover {
+  transform: translateY(20px) !important;
+  transition: all 0.1s;
+}
