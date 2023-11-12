@@ -139,17 +139,23 @@ nav ul li a:hover {
 /*  Card Styling */
 .sections {
   display: flex;
-  justify-content: center; /* Changed to center to avoid huge gaps */
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap; /* Allows sections to wrap if needed */
   gap: 20px; /* Adds space between sections if they wrap */
   padding: 20px; /* Adds padding inside the sections container */
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
   display: flex;
   flex-direction: row;
   flex: 1; /* Allows sections to grow and fill the available space */
-  max-width: 50%; /* Maximum width of each section */
+
+  width: 50%;
+  min-width: 300px;
 
   background: rgba(17,52,65, 0.75);
   outline-style: solid;
@@ -216,6 +222,9 @@ nav ul li a:hover {
 #greeting .sectionImgDiv img {
   outline-color: #7B5E16;
 }
+#machinima .sectionImgDiv img {
+  outline-color: #1A364F;
+}
 
 
 
@@ -237,4 +246,31 @@ nav ul li a:hover {
 .section .sectionTextDiv ul li a:hover {
   transform: translateY(20px) !important;
   transition: all 0.1s;
+}
+
+
+
+
+
+
+
+
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+.workplace img {
+  width: 50px;
+  height: 50px;
 }
