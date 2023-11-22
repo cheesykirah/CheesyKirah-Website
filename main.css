@@ -1,3 +1,8 @@
+@font-face {
+  font-family: coolefontlol;
+  src: url(assets/fonts/BradBunR.ttf);
+}
+
 body {
   font-family: 'Arial', sans-serif;
   color: #ffffff;
@@ -137,6 +142,21 @@ nav ul li a:hover {
 
 
 /*  Card Styling */
+.coolerStyle {
+  background: rgba(17,52,65, 0.75);
+  outline-style: solid;
+  outline-width: 5px;
+  outline-color: rgba(50,85,99, 0.75);
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+
+
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
 .sections {
   display: flex;
   flex-direction: column;
@@ -157,17 +177,7 @@ nav ul li a:hover {
   width: 50%;
   min-width: 300px;
 
-  background: rgba(17,52,65, 0.75);
-  outline-style: solid;
-  outline-width: 5px;
-  outline-color: rgba(50,85,99, 0.75);
 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-  backdrop-filter: blur(5px);
-
-
-  padding: 20px;
-  border-radius: 15px;
   margin-bottom: 20px; /* Adds a margin at the bottom of each section */
 
   max-height: 300px;
@@ -238,6 +248,12 @@ nav ul li a:hover {
 #games .sectionImgDiv img {
   outline-color: #525B60;
 }
+#videos .sectionImgDiv img {
+  outline-color: rgb(180, 201, 203);
+}
+#music .sectionImgDiv img {
+  outline-color: rgb(66, 94, 110);
+}
 
 
 
@@ -297,4 +313,37 @@ nav ul li a:hover {
 
 .workplaceA, workplaceA:link, workplaceA:visited, workplaceA:hover, workplaceA:active {
   color: #ffffff;
+}
+
+
+#copyright {
+  text-align: center;
+  width: 100%;
+}
+
+
+
+.personalZeug{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.centricImage {
+  width: 30% !important;
+  border-radius: 25%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.personalZeug h1 {
+  font-size: 50px;
+}
+
+
+.pro {
+  font-family: coolefontlol !important;
 }

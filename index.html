@@ -36,7 +36,7 @@
 <div class="sections">
 
 
-    <div class="section left" id="greeting">
+    <div class="section left coolerStyle" id="greeting">
         <div class="sectionImgDiv"><img src="assets/images/cheesykirah.png" alt="CheesyKirah Avatar"></div>
         <div class="sectionTextDiv">
             <h1 id="greeting">Greetings,</h1>
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="section right" id="machinima">
+    <div class="section right coolerStyle" id="machinima">
         <div class="sectionTextDiv">
             <h1 id="machinima">Machinima</h1>
             <p>The art of making film in the confines of a videogame is what drives the community of machinima. Scratching your creativity and enabling everyone to tell amazing stories.</p>
@@ -70,13 +70,13 @@
         <div class="sectionImgDiv"><img src="assets/images/endiversum.png" alt="Endiversum Logo"></div>
     </div>
 
-    <div class="section right" id="games">
+    <div class="section right coolerStyle" id="games">
         <div class="sectionImgDiv"><img src="assets/images/games.png" alt="'You Just Died'-Game Cover Art"></div>
         <div class="sectionTextDiv">
             <h1 id="games">Games</h1>
             <p>Gaming is a vast sea of the most unique experiences availible. Creating your own and watching others play is just magical.</p>
             <hr>
-            <a href="https://www.endiversum.com/" class="workplaceA">
+            <a href="https://cheesykirah.itch.io/" class="workplaceA">
             <div class="flexRow workplace">
                 <img src="assets/icons/cheese icon yellow.png" alt="CheesyKirah Logo">
                 <div class="flexColumn">
@@ -86,11 +86,59 @@
             </div>
             </a>
             <hr>
-            <a href="https://www.endiversum.com/" class="workplaceA">
+            <a href="https://sites.google.com/view/laisemoat/startseite" class="workplaceA">
                 <div class="flexRow workplace">
                     <img src="assets/icons/laisemoat.png" alt="Laise Moat Logo">
                     <div class="flexColumn">
                         <h2>Laise Moat</h2>
+                        <p>Since 2022</p>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+    </div>
+
+    <div class="section right coolerStyle" id="videos">
+        <div class="sectionTextDiv">
+            <h1 id="videos">Videos</h1>
+            <p>The art of making film in the confines of a videogame is what drives the community of machinima. Scratching your creativity and enabling everyone to tell amazing stories.</p>
+            <hr>
+            <a href="/personal#youtube" class="workplaceA">
+            <div class="flexRow workplace">
+                <img src="assets/icons/yt.png" alt="YouTube Logo">
+                <div class="flexColumn">
+                    <h2>YouTube</h2>
+                    <p>Since 2017</p>
+                </div>
+            </div>
+            </a>
+            <hr>
+            <a href="https://www.youtube.com/@diebesteligaderwelt" class="workplaceA">
+            <div class="flexRow workplace">
+                <img src="assets/icons/dbldw.png" alt="Die beste Liga der Welt Logo">
+                <div class="flexColumn">
+                    <h2>Die beste Liga der Welt</h2>
+                    <p>December 2022 - April 2023</p>
+                </div>
+            </div>
+            </a>
+            <hr>
+        </div>
+        <div class="sectionImgDiv"><img src="assets/images/video.png" alt="Web Video Illustration"></div>
+    </div>
+
+    <div class="section right coolerStyle" id="music">
+        <div class="sectionImgDiv"><img src="assets/images/music.png" alt="Music Illustration"></div>
+        <div class="sectionTextDiv">
+            <h1 id="music">Music</h1>
+            <p>The sounds of reality, rearranged to tell feelings and let your heart swim in the sea of waves.</p>
+            <hr>
+            <a href="https://open.spotify.com/artist/6vYEW9u11WLIUqkdUgjbV1?si=lZwkF0iERluTSLNBNtwN9g" class="workplaceA">
+                <div class="flexRow workplace">
+                    <img src="assets/icons/cheese icon yellow.png" alt="CheesyKirah Logo">
+                    <div class="flexColumn">
+                        <h2>Personal</h2>
                         <p>Since 2022</p>
                     </div>
                 </div>
@@ -105,6 +153,15 @@
 
 
 </div>
+
+
+
+<footer>
+    <p id="copyright">©2023 CheesyKirah</p>
+</footer>
+
+
+
 </body>
 
 
@@ -126,6 +183,14 @@ function calculateAge() {
 
 // Call calculateAge every millisecond
 setInterval(calculateAge, 1);
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const currentYear = new Date().getFullYear();
+    document.getElementById('copyright').textContent = `©${currentYear} CheesyKirah`;
+});
+
 </script>
 
 
