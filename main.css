@@ -1,6 +1,6 @@
 @font-face {
-  font-family: coolefontlol;
-  src: url(assets/fonts/BradBunR.ttf);
+  font-family: myCoolFont;
+  src: url(gunmetl.ttf);
 }
 
 body {
@@ -341,9 +341,38 @@ nav ul li a:hover {
 
 .personalZeug h1 {
   font-size: 50px;
+
+  margin-bottom: 0 !important;
 }
 
 
 .pro {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  font-family: myCoolFont !important;
+  font-size: 40px;
+  color: #ff8b0d;
+
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
+}
+
+
+.socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.socials li {
+  margin-right: 5px;
+  margin-left: 5px;
+
+  font-size: 30px;
+}
+.socials li a {
+  color: #ffe265;
 }
