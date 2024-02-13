@@ -376,3 +376,42 @@ nav ul li a:hover {
 .socials li a {
   color: #ffe265;
 }
+
+.stufflist, .stufflist li, .stufflist li a {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+
+.fortnite-header {
+  text-align: center;
+}
+
+
+.fortnite-header {
+  text-align: center;
+}
+
+.fortnite-maps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die Elemente horizontal */
+}
+
+.fortnite-map {
+  display: block;
+  width: 250px;
+  margin: 10px; /* Optional: Fügt etwas Abstand zwischen den Elementen hinzu */
+}
+
+.fortnite-map img {
+  width: 100%;
+}
+
+.fortnite-map p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+}
