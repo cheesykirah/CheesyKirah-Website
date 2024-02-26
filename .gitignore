@@ -1,0 +1,33 @@
+﻿# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directories
+.npm
+.temp
+.tmp
+.cache
+
+# Optional eslint cache
+.eslintcache
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# my stuff
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+vite.config.ts.timestamp-*
+static/uploads
+*postgres*
+app.log
+docker-compose.yml
+local.db

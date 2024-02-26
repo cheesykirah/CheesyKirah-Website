@@ -4,12 +4,12 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #ffffff;
   margin: 0;
   padding: 0;
-  background-color: #001D2C;
-  background: url('assets/images/background.png') no-repeat center center fixed; 
+  background-color: #001d2c;
+  background: url("assets/images/background.png") no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden; /* Prevents horizontal scroll */
 }
@@ -23,139 +23,129 @@ body::after {
   bottom: 0;
   background: inherit;
   opacity: 0.9;
-  background-color: #001D2C;
-  z-index: -1; 
+  background-color: #001d2c;
+  z-index: -1;
 }
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  header {
-    text-align: center;
-  }
-  header ul {
-    list-style: none;
-    padding: 0;
-  }
-  header ul li {
-    display: inline;
-    margin: 0 25px;
-  }
-  header a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .greeting {
-    text-align: center;
-  }
-  .sections {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  .section {
-    width: 30%;
-    background: #333;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  .section h2 {
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+}
+header ul li {
+  display: inline;
+  margin: 0 25px;
+}
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.greeting {
+  text-align: center;
+}
+.sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.section {
+  width: 30%;
+  background: #333;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.section h2 {
+}
+.section img {
+  max-width: 100%;
+  height: auto;
+}
 
-  }
-  .section img {
-    max-width: 100%;
-    height: auto;
-  }
+nav div .navicon {
+  height: 50px;
+}
+nav div .navfont {
+  height: 35px;
+}
 
+nav {
+  display: flex;
+  flex-direction: row;
 
-  nav div .navicon {
-    height: 50px;
-  }
-  nav div .navfont {
-    height: 35px;
-  }
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+nav div {
+  margin-left: 0;
+  margin-right: auto;
+}
+nav ul {
+  margin-left: auto;
+  margin-right: 0;
+}
 
+nav {
+  background-color: rgba(97, 123, 135, 0.5);
 
-  nav {
-    display: flex;
-    flex-direction: row;
+  outline-color: #83a2b0;
+  outline-width: 5px !important;
+  outline-style: solid;
 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    backdrop-filter: blur(5px);
-  }
-  nav div {
-    margin-left: 0;
-    margin-right: auto;
-  }
-  nav ul {
-    margin-left: auto;
-    margin-right: 0;
-  }
+  border-radius: 25px;
 
+  width: 95%;
 
-  nav {
-    background-color: rgba(97,123,135,0.5);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 
-    outline-color: #83A2B0;
-    outline-width: 5px !important;
-    outline-style: solid;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 
-    border-radius: 25px;
-
-    width: 95%;
-
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-
-    padding-top: auto;
-    padding-bottom: auto;
-  }
-
-
+  padding-top: auto;
+  padding-bottom: auto;
+}
 
 nav ul li a {
-    font-weight: 800;
-    font-size: 20px;
-    transition: all 0.1s;
+  font-weight: 800;
+  font-size: 20px;
+  transition: all 0.1s;
 
-    background-color: rgba(255, 255, 255, 0);
-    height: auto;
+  background-color: rgba(255, 255, 255, 0);
+  height: auto;
 
-    margin: auto;
+  margin: auto;
 }
 
 nav ul li a:hover {
-    font-weight: 900;
-    font-size: 20px;
-    transition: all 0.1s;
-    color: rgb(212, 234, 240);
+  font-weight: 900;
+  font-size: 20px;
+  transition: all 0.1s;
+  color: rgb(212, 234, 240);
 
-    background-color: rgba(255, 255, 255, 0.2);
-    height: auto;
-    margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: auto;
+  margin: auto;
 }
-
-
 
 /*  Card Styling */
 .coolerStyle {
-  background: rgba(17,52,65, 0.75);
+  background: rgba(17, 52, 65, 0.75);
   outline-style: solid;
   outline-width: 5px;
-  outline-color: rgba(50,85,99, 0.75);
+  outline-color: rgba(50, 85, 99, 0.75);
 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-
 
   padding: 20px;
   border-radius: 15px;
 }
-
 
 .sections {
   display: flex;
@@ -176,7 +166,6 @@ nav ul li a:hover {
 
   width: 50%;
   min-width: 300px;
-
 
   margin-bottom: 20px; /* Adds a margin at the bottom of each section */
 
@@ -240,13 +229,13 @@ nav ul li a:hover {
 
 /*Border Colors*/
 #greeting .sectionImgDiv img {
-  outline-color: #7B5E16;
+  outline-color: #7b5e16;
 }
 #machinima .sectionImgDiv img {
-  outline-color: #1A364F;
+  outline-color: #1a364f;
 }
 #games .sectionImgDiv img {
-  outline-color: #525B60;
+  outline-color: #525b60;
 }
 #videos .sectionImgDiv img {
   outline-color: rgb(180, 201, 203);
@@ -254,11 +243,6 @@ nav ul li a:hover {
 #music .sectionImgDiv img {
   outline-color: rgb(66, 94, 110);
 }
-
-
-
-
-
 
 .section .sectionTextDiv ul li a img {
   width: 20px;
@@ -277,14 +261,6 @@ nav ul li a:hover {
   transition: all 0.1s;
 }
 
-
-
-
-
-
-
-
-
 .flexColumn {
   display: flex;
   flex-direction: column;
@@ -293,11 +269,6 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
 }
-
-
-
-
-
 
 .workplace img {
   width: 50px;
@@ -311,19 +282,20 @@ nav ul li a:hover {
   margin: 0;
 }
 
-.workplaceA, workplaceA:link, workplaceA:visited, workplaceA:hover, workplaceA:active {
+.workplaceA,
+workplaceA:link,
+workplaceA:visited,
+workplaceA:hover,
+workplaceA:active {
   color: #ffffff;
 }
-
 
 #copyright {
   text-align: center;
   width: 100%;
 }
 
-
-
-.personalZeug{
+.personalZeug {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -345,7 +317,6 @@ nav ul li a:hover {
   margin-bottom: 0 !important;
 }
 
-
 .pro {
   font-family: myCoolFont !important;
   font-size: 40px;
@@ -354,7 +325,6 @@ nav ul li a:hover {
   margin-top: 0 !important;
   margin-bottom: 5px !important;
 }
-
 
 .socials {
   list-style: none;
@@ -366,7 +336,6 @@ nav ul li a:hover {
   margin-right: auto;
 }
 
-
 .socials li {
   margin-right: 5px;
   margin-left: 5px;
@@ -377,18 +346,17 @@ nav ul li a:hover {
   color: #ffe265;
 }
 
-.stufflist, .stufflist li, .stufflist li a {
+.stufflist,
+.stufflist li,
+.stufflist li a {
   color: white;
   text-align: center;
   font-size: 35px;
 }
 
-
-
 .fortnite-header {
   text-align: center;
 }
-
 
 .fortnite-header {
   text-align: center;
@@ -403,6 +371,7 @@ nav ul li a:hover {
 .fortnite-map {
   display: block;
   width: 250px;
+  cursor: pointer;
   margin: 10px; /* Optional: Fügt etwas Abstand zwischen den Elementen hinzu */
 }
 
@@ -410,8 +379,23 @@ nav ul li a:hover {
   width: 100%;
 }
 
+.fortnite-folder-header {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+}
+
 .fortnite-map p {
   text-align: center;
   font-size: 30px;
   margin-top: 5px;
+}
+
+.fortnite-map img {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: #101010;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

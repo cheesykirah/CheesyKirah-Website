@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheesyKirah - Personal</title>
+
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ebe546" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img
+            src="assets/icons/cheese icon.png"
+            alt="Käse Icon"
+            class="navicon"
+          />
+          <img
+            src="assets/font/CheesyKirah.png"
+            alt="CheesyKirah"
+            class="navfont"
+          />
+        </div>
+        <ul>
+          <li><a href="index.html">PORTFOLIO</a></li>
+          <li><a href="personal.html">PERSONAL</a></li>
+          <li><a href="stuff.html">STUFF</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="fortnite-folder-header">Fortnite Maps</h1>
+    <hr />
+    <br />
+
+    <div id="tollemapshiereinfugen"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mapContainer = document.getElementById("tollemapshiereinfugen");
+
+        function createFortniteMapElement(folderName, files) {
+          const section = document.createElement("section");
+
+          const header = document.createElement("h3");
+          header.classList.add("fortnite-folder-header");
+          header.textContent = folderName.replace(/_/g, " "); // Unterstriche durch Leerzeichen ersetzen
+          section.appendChild(header);
+
+          const mapsContainer = document.createElement("div");
+          mapsContainer.classList.add("fortnite-maps-container");
+
+          files.forEach((file) => {
+            const mapElement = document.createElement("div");
+            mapElement.classList.add("fortnite-map");
+
+            const image = document.createElement("img");
+            image.src = file.path;
+
+            image.draggable = false;
+            image.style.userSelect = "none";
+
+            image.addEventListener("click", function () {
+              downloadImage(file.path, file.title);
+            });
+
+            mapElement.appendChild(image);
+
+            const title = document.createElement("p");
+            title.textContent = file.title;
+            mapElement.appendChild(title);
+
+            mapsContainer.appendChild(mapElement);
+          });
+
+          section.appendChild(mapsContainer);
+          mapContainer.appendChild(section);
+        }
+
+        async function loadFortniteMaps() {
+          try {
+            const response = await fetch("/api/fortnite-maps");
+            const data = await response.json();
+
+            for (const folderName in data) {
+              const files = data[folderName];
+              createFortniteMapElement(folderName, files);
+            }
+          } catch (error) {
+            console.error("Error loading Fortnite maps:", error);
+          }
+        }
+
+        function downloadImage(imagePath, imageName) {
+          const a = document.createElement("a");
+          a.href = imagePath;
+          a.download = imageName;
+          a.click();
+        }
+
+        loadFortniteMaps();
+      });
+    </script>
+  </body>
+</html>
