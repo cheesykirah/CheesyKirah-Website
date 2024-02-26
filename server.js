@@ -13,11 +13,10 @@ app.get("/api/fortnite-maps", (req, res) => {
 
   const subDirs = fs.readdirSync(mapsPath, { withFileTypes: true })
     .filter(entry => entry.isDirectory())
-    .map(entry => entry.name);
+    .map(entry => entry.name)
+    .sort((a, b) => b.localeCompare(a)); // reversen damit die neusten maps zuerst kommen
 
-  const reversedSubDirs = subDirs.sort().reverse();
-
-  for (const subDir of reversedSubDirs) {
+  for (const subDir of subDirs) {
     const categoryPath = path.join(mapsPath, subDir);
     const images = [];
 
