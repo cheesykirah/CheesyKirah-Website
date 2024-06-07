@@ -3,6 +3,15 @@
   src: url(gunmetl.ttf);
 }
 
+@font-face {
+  font-family: 'gayPronounsWokeAlarm';
+  src: url('/public/assets/font/Coffee\ Fills.ttf') format('truetype');
+}
+
+.gayPronouns {
+  font-family: 'gayPronounsWokeAlarm', sans-serif !important;
+}
+
 body {
   font-family: "Arial", sans-serif;
   color: #ffffff;
@@ -398,4 +407,50 @@ workplaceA:active {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+
+
+
+
+.latestWork {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  margin-bottom: 15px !important;
+}
+.latestWork img {
+  width: 45%;
+  margin-right: 2.5%;
+  border-radius: 25px;
+}
+.latestWorkContent {
+  width: 50%;
+  margin-left: 2.5%;
+}
+.latestWorkContent h2 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.latestWorkContent h3 {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #d3d0c7 !important;
+}
+.latestWorkContent p {
+  margin-top: 15px;
+}
+
+.latestWorkContent .date {
+  text-align: right;
+  color: #b0ada5 !important;
+}
+.latestWorkA {
+  text-decoration: none;
+  color: white;
 }
